@@ -2,44 +2,51 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Téléchargements</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 80px;
-}
-.btn {
-    background: #0078d4;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 18px;
-}
-</style>
+<title>DataPalm Website</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-<img src="images/logo-cirad-fr.jpg" width="200" alt="Logo">
+<!-- MENU -->
+<header class="menu">
+    <img src="images/logo-cirad-fr.jpg" width="200" alt="Logo">
+    <nav>
+        <a href="#telechargements">Téléchargements</a>
+        <a href="#liens">Liens</a>
+    </nav>
+</header>
     
-<h1>Documents disponibles</h1>
+<!-- HERO -->
+<section class="hero">
+    <h1>Bienvenue sur le site</h1>
+    <p>Accédez aux fichiers en un clic</p>
+</section>
 
-<p>Pour télécharger, cliquez ci-dessous :</p>
+<!-- TELECHARGEMENTS -->
+<section id="telechargements">
+    <h2>📂 Téléchargements</h2>
 
-<ul>
-    <li><a href="echantillons_fichier_standard.xlsx" download>Fichier standard pour le référencement des échantillons</a></li>
-    <a href="Modele_MTA.docx" download>Modele déclaration MTA</a>
-    <a href="Modele_DTA.docx" download>Modele déclaration DTA</a>
-</ul>
+    <a class="btn" href="echantillons_fichier_standard.xlsx" download>
+        Fichier standard pour le référencement des échantillons
+    </a>
 
-<h2>Liens utiles</h2>
+    <a class="btn" href="fichiers/Modele_MTA.docx" download>
+        Modele déclaration MTA
+    </a>
 
-<ul>
-        <a href="https://dmp.opidor.fr/" target="_blank">
-            🌐 Site de DMP Opidor - Rédaction Plan de Gestion de Données (PGD)
-        </a>
-</ul>
+     <a class="btn" href="fichiers/Modele_DTA.docx" download>
+        Modele déclaration DTA
+    </a>
+</section>
+
+<!-- LIENS -->
+<section id="liens">
+    <h2>🌐 Liens utiles</h2>
+
+    <a class="btn-secondary" href="https://dmp.opidor.fr/" target="_blank">
+        🌐 Site de DMP Opidor - Rédaction Plan de Gestion de Données (PGD)
+    </a>
+</section>
     
 </body>
 </html>
